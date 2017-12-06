@@ -44,10 +44,10 @@ class TaskC3 {
     }
 
     public static double getWeight(int weight) {
-        double gMars = 9.81;
-        double gEarth = 3.86;
-        double g = gEarth / gMars;
-        double weightOnTheMars = weight * g;
+        double gEarth = 9.81;
+        double gMars = 3.86;
+        double k = gMars / gEarth;
+        double weightOnTheMars = weight * k;
         weightOnTheMars = round(weightOnTheMars);
 
         return weightOnTheMars;
