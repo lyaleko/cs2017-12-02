@@ -35,7 +35,7 @@ class TaskC3 {
     private static final double MARS = 3.86;
     private static final double EARTH = 9.81;
 
-    private static double getWeight(int veight){
+    static double getWeight(int veight){
         double veight_m = (double)veight * MARS / EARTH;
 
         return (double)Math.round(veight_m*100) / 100;
