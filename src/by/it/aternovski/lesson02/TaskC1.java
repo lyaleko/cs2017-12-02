@@ -17,7 +17,7 @@ class TaskC1 {
         int n1 = sc.nextInt();
         int n2 = sc.nextInt();
         //int n3 = n1 + n2;
-        System.out.println("Сумма ваших чисел = " + (n1+n2) );
+        System.out.println("Sum = " + (n1+n2) );
     }
 
 
