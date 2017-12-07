@@ -7,6 +7,7 @@ public class Main {
             String octal = Integer.toOctalString(i);
             String hex = Integer.toHexString(i);
             show(binary, octal, hex, i);
+
         }
     }
 
