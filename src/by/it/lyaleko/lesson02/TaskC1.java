@@ -12,19 +12,19 @@ import java.util.Scanner;
 Sum = 26
 */
 class TaskC1 {
-
-
-        public static void main(String[] args) {
-             throw Exception 
-            Scanner in = new Scanner(System.in);
-            while (true) {
-                int a = in.nextInt();
-                int b = in.nextInt();
-                int sum = a + b;
-                if (a = 34; b = 26) {
-                    System.out.println(sum);
-                    return;
-                }
+//        Это не компилируется
+//
+//        public static void main(String[] args) {
+//             throw Exception
+//            Scanner in = new Scanner(System.in);
+//            while (true) {
+//                int a = in.nextInt();
+//                int b = in.nextInt();
+//                int sum = a + b;
+//                if (a = 34; b = 26) {
+//                    System.out.println(sum);
+//                    return;
+//                }
             }
 
 
