@@ -12,4 +12,5 @@ class TaskA3 {
         i = i * i;
         j = j * j;
         int k = i + j;
-        System.out.println(i * i "" +
+    }
+}
