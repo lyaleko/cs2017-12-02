@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 @SuppressWarnings("all") //море warnings. всех прячем.
 
 //поставьте курсор на следующую строку и нажмите Ctrl+Shift+F10
-public class Testing {
+public class Testing04 {
 
     @Test(timeout = 500)
     public void testTaskA1() throws Exception {
@@ -227,7 +227,7 @@ public class Testing {
      */
     //метод находит и создает класс для тестирования
     //по имени вызывающего его метода, testTaskA1 будет работать с TaskA1
-    private static Testing run(String in) {
+    private static Testing04 run(String in) {
         Throwable t = new Throwable();
         StackTraceElement trace[] = t.getStackTrace();
         StackTraceElement element;
@@ -244,22 +244,22 @@ public class Testing {
         System.out.println("\n---------------------------------------------");
         System.out.println("Старт теста для " + clName + " input:" + in);
         System.out.println("---------------------------------------------");
-        return new Testing(clName, in);
+        return new Testing04(clName, in);
     }
 
     //private String className;
 
-    public Testing() {
+    public Testing04() {
     //Конструктор тестов
     }
 
     //Конструктор тестов
-    private Testing(String className) {
+    private Testing04(String className) {
         this(className, "");
     }
 
     //Основной конструктор тестов
-    private Testing(String className, String in) {
+    private Testing04(String className, String in) {
         //this.className = className;
         Class<?> c = null;
         try {
@@ -289,12 +289,12 @@ public class Testing {
     }
 
     //проверка вывода
-    private Testing include(String str) {
+    private Testing04 include(String str) {
         assertTrue("Строка не найдена: " + str + "\n", stringWriter.toString().contains(str));
         return this;
     }
 
-    private Testing exclude(String str) {
+    private Testing04 exclude(String str) {
         assertTrue("Лишние данные в выводе: " + str + "\n", !stringWriter.toString().contains(str));
         return this;
     }
