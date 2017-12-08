@@ -1,4 +1,7 @@
 package by.it.mlech.lesson03;
+
+import java.util.Scanner;
+
 /*
     Сумма цифр четырехзначного числа
 
@@ -20,6 +23,20 @@ package by.it.mlech.lesson03;
     5. Метод sumDigitsInNumber должен правильно возвращать сумму всех цифр в числе number.
 */
 public class TaskC2 {
+    public static int sumDigitsInNumber(int number) {
+        int sum = 0;
+        while (number>0) {
+            sum = sum + number%10;
+            number = number/10;
+        }
+        return sum;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        System.out.println(sumDigitsInNumber(a));
+
+    }
 
 
 
