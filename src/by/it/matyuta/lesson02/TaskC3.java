@@ -43,7 +43,6 @@ public class TaskC3 {
 
     public static double getWeight(int weight) {
         double result = (weight * 3.86) / 9.81;
-
         result = result * 100;
         int i = (int) Math.round(result);
         result = (double) i / 100;
