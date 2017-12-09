@@ -1,5 +1,7 @@
 package by.it.niehaj.lesson02;
 
+import java.util.Scanner;
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3,86
@@ -31,4 +33,13 @@ package by.it.niehaj.lesson02;
 */
 class TaskC3 {
 
+    public static void main(String[] args) {
+        double earth_gravity = 9.81;
+        double mars_gravity = 3.86;
+        double grav_diff = earth_gravity/mars_gravity;
+        Scanner sc = new Scanner(System.in);
+        double weight = (double) sc.nextInt();
+        double mars_weight = weight/grav_diff;
+        System.out.println(Math.round(mars_weight));
+    }
 }
