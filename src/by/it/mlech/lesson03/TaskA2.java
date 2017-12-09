@@ -21,5 +21,13 @@ Lesson 04. Task A2. Стихотворение
 Для автоматической проверки откройте и запустите класс Testing
 */
 class TaskA2 {
+    public static void main(String[] args) {
+        String a = "Я помню чудное мгновенье:";
+        String b = "Передо мной явилась ты,";
+        String c = "Как мимолетное виденье,";
+        String d = "Как гений чистой красоты.";
+
+        System.out.print("Мое любимое стихотворение:\n"+a+"\n"+b+"\n"+c+"\n"+d);
+    }
 
 }
