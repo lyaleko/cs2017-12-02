@@ -37,6 +37,26 @@ package by.it.shmanovskij.lesson04;
 
 */
 
-public class TaskC1 {
+import java.util.Scanner;
 
-}
+public class TaskC1
+{
+
+public static void main(String[] args) {
+    String[] y = {"месяц 0", "январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь", "месяц 13", "месяц 14"};
+    Scanner zarplata = new Scanner(System.in);
+    System.out.println("Какую вы хотите зарплату в $$$?");
+    int x = zarplata.nextInt();
+    if (x < 300 || x > 3000) System.out.println("Мы вам перезвоним!");
+    else
+        for (int month = 0; month <= 14; month++) {
+            double z = 0;
+            if (month == 0 || month == 13 || month == 14) z = 0;
+            else if (month == 6 || month == 7 || month == 8) z = x;
+            else z = x * 1.5;
+            System.out.println("За " + y[month] + " начислено $" + z);
+            if (z==666) break;
+        }
+}}
+
+

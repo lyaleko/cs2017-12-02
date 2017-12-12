@@ -1,7 +1,5 @@
 package by.it.shmanovskij.lesson03;
 
-import org.jetbrains.annotations.Contract;
-
 import java.util.Scanner;
 
 /*
@@ -35,11 +33,11 @@ Lesson 04. Task B2. Нужно написать программу, котора
 */
 class TaskB2
 {
-    public double dis(int a, int b, int c)
+    public static double dis(int a, int b, int c)
     {
-      return  (a*a-4*b*c);
+      return  (b*b-4*a*c);
     }
-    public void main(String[] args)
+    public static void main(String[] args)
     {
         System.out.println("Введите параметры квадратного уравнения a,b,c");
         Scanner scan=new Scanner(System.in);

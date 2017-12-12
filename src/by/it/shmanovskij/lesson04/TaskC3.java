@@ -24,5 +24,14 @@ package by.it.shmanovskij.lesson04;
 */
 
 public class TaskC3 {
+public static void main(String[] args)
+{
+    String[] N={"","","дв","тр","четыр","пят","шест","сем","восем","девят","десят","адцать","два","три","четыре","сорок","девяносто","сто"};
+    for(int i=2;i<=10;i++)
+        for(int j=2;j<=10;j++)
+        {
 
+            int x=i*j;
+        }
+}
 }
