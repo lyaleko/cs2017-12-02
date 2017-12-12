@@ -25,6 +25,22 @@ package by.it.shmanovskij.lesson04;
  */
 
 
-public class TaskB3 {
+import java.util.Scanner;
 
+public class TaskB3
+{
+    public static void main(String[] args)
+    {
+        Scanner chislo= new Scanner(System.in);
+    System.out.println("введите максимально допустимое число");
+        int max=chislo.nextInt();
+        int i=1,sum=1;
+    while(true) {
+        if (sum>max) break; else {
+            System.out.print(sum + ",");
+            i++;
+            sum +=i;
+        }
+        }
+    }
 }
