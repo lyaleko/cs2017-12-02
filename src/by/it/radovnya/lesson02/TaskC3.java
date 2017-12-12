@@ -1,6 +1,3 @@
-package by.it.radovnya.lesson02;
-
-import java.util.Scanner;
 
 /*
 Ускорение свободного падения на Земле и Марсе таково:
@@ -31,14 +28,22 @@ import java.util.Scanner;
 
 
 */
+package by.it.radovnya.lesson02;
+
+import java.util.Scanner;
+
 class TaskC3 {
     public static void  main (String[] args ){
         Scanner n =new Scanner(System.in);
         System.out.println("Vvedite ves cheloveka: ");
         int p = n.nextInt();
+        System.out.println( "Ves cheloveka na Marse: " + TaskC3.getWeight(p));
+    }
+    public static double getWeight(int weight){
         double z = 9.81;
-        double m = 3.86 ;
-        double k= p/z*m;
-        System.out.println( "Ves cheloveka na Marse: " +k );
+        double m = 3.86;
+        double d = weight/z*m*100;
+        int i = (int)Math.round(d);
+        return ((double)i/100);
     }
 }
