@@ -21,10 +21,11 @@ import java.util.Scanner;
 class TaskB1 {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        int y = x*x;
+        Scanner cs = new Scanner(System.in);
+        int x = cs.nextInt();
+        int y = x * x;
         System.out.println(y);
+
     }
 
 }

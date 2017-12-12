@@ -21,11 +21,20 @@ package by.it.niehaj.lesson03;
 */
 public class TaskC2 {
 
+    public static void main(String[] args) {
+        System.out.println(sumDigitsInNumber(5467));
+    }
 
+    public static int sumDigitsInNumber(int i) {
 
+        int a = i % 10;
+        int b = i/10 % 10;
+        int c = i/100 % 10;
+        int d = i/1000 % 10;
 
-//    public static void main(String[] args) {
-//        System.out.println(sumDigitsInNumber(5467));
-//    }
+        int sum = a + b + c + d;
+
+        return sum;
+    }
 
 }

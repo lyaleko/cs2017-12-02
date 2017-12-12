@@ -33,13 +33,42 @@ Scanner sc=new Scanner(System.in);
 
  */
 
+
 import java.util.Scanner;
 
 class TaskA1 {
 
-    Scanner sc = new Scanner(System.in);
-    int x = sc.nextInt();
-    int y = sc.nextInt();
+    int x, y;
+    double a, b;
 
+    public static void main(String[] args) {
 
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ввод:");
+
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
+
+        int isum = x + y;
+        int idif = x - y;
+        int imult = x * y;
+        int idiv = x / y;
+        int idiv_rem = x % y;
+
+        System.out.println();
+        System.out.println("Вывод:");
+        System.out.println(isum + " " + idif + " " + imult + " " + idiv + " " + idiv_rem);
+
+        double a = x;
+        double b = y;
+
+        double dsum = a + b;
+        double ddif = a - b;
+        double dmult = a * b;
+        double ddiv = a / b;
+        double ddiv_rem = a % b;
+        System.out.println(dsum + " " + ddif + " " + dmult + " " + ddiv + " " + ddiv_rem);
+
+    }
 }

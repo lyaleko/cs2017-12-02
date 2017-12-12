@@ -34,12 +34,37 @@ import java.util.Scanner;
 class TaskC3 {
 
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ввод:");
+        int x = scanner.nextInt();
+        System.out.println("");
+
+        System.out.println("Вывод:");
+        System.out.println(getWeight(x));
+
+    }
+
+    public static double getWeight(int weight) {
+
         double earth_gravity = 9.81;
         double mars_gravity = 3.86;
-        double grav_diff = earth_gravity/mars_gravity;
-        Scanner sc = new Scanner(System.in);
-        double weight = (double) sc.nextInt();
-        double mars_weight = weight/grav_diff;
-        System.out.println(Math.round(mars_weight));
+        double gravity_diff = earth_gravity/mars_gravity;
+        double weightOnTheMars = weight / gravity_diff;
+        weightOnTheMars = round(weightOnTheMars);
+
+        return weightOnTheMars;
+
     }
+
+    public static double round(double y) {
+
+        y = y * 100;
+        int x = (int) Math.round(y);
+        return y = (double) x/100;
+
+    }
+
+
 }
