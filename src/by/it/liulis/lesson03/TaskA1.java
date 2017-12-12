@@ -37,6 +37,7 @@ Scanner sc=new Scanner(System.in);
 import java.util.Scanner;
 
 class TaskA1 {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();

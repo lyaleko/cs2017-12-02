@@ -6,6 +6,7 @@ package by.it.liulis.lesson02;
  */
 
 class TaskA3 {
+
     public static void main(String[] args) {
         int i = 3;
         int j = 4;

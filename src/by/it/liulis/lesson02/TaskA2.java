@@ -8,6 +8,7 @@ package by.it.liulis.lesson02;
 Для автоматической проверки откройте и запустите класс Testing
 */
 class TaskA2 {
+
     public static void main(String[] args) {
         int count = 5;
 
