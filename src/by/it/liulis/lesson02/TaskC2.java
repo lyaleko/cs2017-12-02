@@ -16,6 +16,7 @@ HEX:22+1a=3c
 OKT:42+32=74
 */
 class TaskC2 {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
