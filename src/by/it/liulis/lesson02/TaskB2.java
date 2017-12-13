@@ -15,6 +15,7 @@ package by.it.liulis.lesson02;
 4. Знаки плюс и минус должны быть расставлены правильно.
 
  */
+
 class TaskB2 {
     private static int a = 1;
     private static int b = 3;

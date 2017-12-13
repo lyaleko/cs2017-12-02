@@ -9,6 +9,7 @@ package by.it.liulis.lesson02;
         4. Выведенный текст должен соответствовать заданию.
 */        
 class TaskB3 {
+
         public static void main(String[] args) {
         String s = "C";
 //        System.out.println("Новым Годом");

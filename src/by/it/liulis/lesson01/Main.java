@@ -7,9 +7,9 @@ public class Main {
             String octal = Integer.toOctalString(i);
             String hex = Integer.toHexString(i);
             show(binary, octal, hex, i);
-
         }
     }
+
 
     public static void show(String binary, String octal, String hex, int i) {
         System.out.printf("%8s   %8s   %8s    %4d %n", checkSize(binary), checkSize(octal), checkSize(hex), i);

@@ -12,6 +12,7 @@ import java.util.Scanner;
 Sum = 26
 */
 class TaskC1 {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
