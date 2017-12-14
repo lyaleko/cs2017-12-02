@@ -12,7 +12,6 @@ import static org.junit.Assert.*;
 //поставьте курсор на следующую строку и нажмите Ctrl+Shift+F10
 public class Testing03 {
 
-
     @Test(timeout = 500)
     public void testTaskA1() throws Exception {
         run("7 2").include("9 5 14 3 1\n9.0 5.0 14.0 3.5 1.0");
